@@ -1,0 +1,372 @@
+
+:root {
+  --main-color: rgb(185, 125, 240) ;
+  --transparent-color: rgba(255, 255, 255, 0.7);
+  --primary-color:#f6f7f8;
+  --secondary-color:#1e2021;
+  --section-padding: 100px;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+}
+.dark-theme{
+  --primary-color:#1e2021;
+  --secondary-color:#f6f7f8;
+}
+
+
+body {
+
+  background-color:white;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+
+    font-family: 'Arial', sans-serif;
+    color:rgb(0, 0, 0);
+    
+  }
+
+  nav {
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 1px;
+    padding-bottom: 10;
+    padding: 3px;
+    background-color: #dddddd;
+  }
+  nav a{
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    padding: 14px 220px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #dddddd;
+  }
+  nav a:hover{
+    background-color: white;
+  }
+  #menu{
+    transition: 0.8s;
+      
+  }
+  .sidemenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(123, 200, 187, 0.708);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .all-menu{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .sidemenu a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidemenu a:hover, .sidemenu  a:focus{
+    color: #f1f1f1;
+  }
+  .sidemenu .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+      
+  }
+    
+  @media screen and (max-height: 450px) {
+    .sidemenu a {font-size: 40px}
+    .sidemenu .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  .profilemini {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  #profile {
+    width: 40px;
+    border-radius: 100%;
+    position: relative;
+    right: 430px;
+    top: 20px;
+  }
+  p{
+    color: #fbfbfb;
+  }
+  .e{
+    color: #010101;
+  }
+  #profilename {
+    position: absolute;
+    right: 280px;
+    top: 30px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #747070;
+  }
+  .t{
+    background-color: white;
+  }
+  
+  h1{
+    font-size: xx-large; 
+    color  : #9cabb1;
+}
+h2{
+  font-size: xx-large;
+    color: #072638;
+}
+h3{
+  font-size: xx-large;
+  color: #0c2844;
+}
+
+h5{
+  font-size: xx-large;
+  color: #0a343c;
+}
+h6{
+  font-size: xx-large;
+  color: #0c303b;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+}Global Rules */ 
+  .c {
+    width: 80%;
+    margin: auto;
+    color: rgb(214, 12, 12); 
+  }
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: #07163d;
+    color: white;
+}
+
+    .comparison{
+    text-align: center;
+    margin-top: 40px;
+    }
+
+
+  .gallery-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .photo {
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(223, 217, 217, 0.2);
+    transition: 0.3s;
+  }
+  #f{
+    padding-top: 170px;
+    margin-left: 120px;
+    color: rgb(9, 36, 63);
+    margin-top: 30px;
+  }
+  pre {
+   
+    margin-left: 120px;
+    color: rgb(81, 81, 81);
+    font-family: Arial;
+    font-size: 150%;
+    }
+    .buy-button {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      border: none;
+      padding: 8px 16px; 
+      border-radius: 50px; 
+      cursor: pointer;
+      margin-top: 10px; 
+      margin-bottom: 150px;
+      margin-left: 120px;
+    }
+    
+    .buy-button:hover {
+      background-color: #666; 
+    }
+  
+ 
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: cc64eee;
+  color: white;
+}
+.c-language {
+  background-color: #a5d3fc;
+  color: rgb(23, 9, 9);
+}
+
+.containers {
+  width: 300px;
+  height: 450px;
+  border:1px solid #786565;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+  vertical-align: middle;
+  
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text {
+  
+  padding: 5px;
+  box-sizing: content-box;
+  background-color: rgb(13, 35, 66);
+}
+
+.text h4 {
+  color: #0a2f42;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+audio {
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+b{
+  color: #010101;
+  position: relative;
+  top: 600px;
+  right: 1000px;
+  padding-bottom: 80px;
+}
+.columns {
+  float: left;
+  width: 23.3%;
+  padding-left: 10px;
+  position: relative;
+  left: 15%;
+ 
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #197cbe;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(197, 176, 208, 0.596)
+}
+
+.price .header {
+  background-color: #a1c6e1;
+  color: rgb(47, 112, 132);
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #85b9f8;
+  padding: 20px;
+  text-align: center;
+  color: #389ae4;
+}
+
+.price .grey {
+  background-color: #370452;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #8495a5;
+  border: none;
+  color: rgb(74, 73, 74);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
